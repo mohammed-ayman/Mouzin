@@ -125,7 +125,7 @@ figcaption {
   right: 0px;
   margin-top: 0px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-color: #fff;
   box-shadow: 0 0 33px 0 rgba(0, 0, 0, 0.2);
 }
@@ -236,7 +236,7 @@ figcaption {
 
 .dropdown {
   width: 100px;
-  margin-right: 20px;
+  margin-right: 5px;
   padding-left: 0px;
 }
 
@@ -269,7 +269,7 @@ figcaption {
 }
 
 .dropdown-link.w--current {
-  color: #1f6fff;
+  color: #000033;
 }
 
 .dropdown-link.w--current:hover {
@@ -4774,7 +4774,7 @@ figcaption {
 
 .image-2 {
   margin-top: -18px;
-  margin-left: 49px;
+  margin-left: 15px;
   padding-top: 0px;
   padding-right: 27px;
   padding-bottom: 0px;
@@ -4783,7 +4783,7 @@ figcaption {
 .container-2 {
   margin-top: -53px;
   margin-bottom: -27px;
-  margin-left: 152.5px;
+  margin-left: 80px;
 }
 
 .search-input {

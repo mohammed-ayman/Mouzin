@@ -4777,7 +4777,7 @@ Webflow.define('navbar', module.exports = function ($, _) {
     config.easing = data.el.attr('data-easing') || 'ease';
     config.easing2 = data.el.attr('data-easing2') || 'ease';
     var duration = data.el.attr('data-duration');
-    config.duration = duration != null ? Number(duration) : 400;
+    config.duration = duration !== null ? Number(duration) : 400;
     config.docHeight = data.el.attr('data-doc-height'); // Store config in data
 
     data.config = config;
@@ -5224,7 +5224,7 @@ Webflow.define('slider', module.exports = function ($, _) {
 
     config.easing = data.el.attr('data-easing') || 'ease';
     var duration = data.el.attr('data-duration');
-    config.duration = duration != null ? parseInt(duration, 10) : 500;
+    config.duration = duration !== null ? parseInt(duration, 10) : 500;
 
     if (isAttrTrue(data.el.attr('data-infinite'))) {
       config.infinite = true;
@@ -5301,7 +5301,7 @@ Webflow.define('slider', module.exports = function ($, _) {
       });
     });
 
-    if (found != null) {
+    if (found !== null) {
       change(data, {
         index: found,
         immediate: true
@@ -5319,7 +5319,7 @@ Webflow.define('slider', module.exports = function ($, _) {
     }
 
     data.timerId = window.setTimeout(function () {
-      if (data.timerId == null || designer) {
+      if (data.timerId === null || designer) {
         return;
       }
 
@@ -5350,7 +5350,7 @@ Webflow.define('slider', module.exports = function ($, _) {
         configure(data);
         layout(data);
 
-        if (options.select == null) {
+        if (options.select === null) {
           return;
         }
 
@@ -5655,7 +5655,7 @@ Webflow.define('slider', module.exports = function ($, _) {
         $dot.text(i + 1);
       }
 
-      if (spacing != null) {
+      if (spacing !== null) {
         $dot.css({
           'margin-left': spacing,
           'margin-right': spacing

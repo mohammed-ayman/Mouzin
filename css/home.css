@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html,body {
+    background-color: #fff;
+    color: #404040;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav_bar{
+    display: block;
+    height: 60px;
+    width: 100%;
+    border-bottom: #ccc thin;
+    border-width: 1px;
+    box-shadow: 0 2px 1px #efefef;
+    overflow: auto;
+}
+
+.main_nav{
+    width: 80%;
+    float: left;
+}
+
+
+.side_nav{
+    width: 20%;
+    text-align: end;
+    background-color: darkred;
+    z-index: 1;
+}
+
+.home_img{
+   height: 100%;
+    width: 10%;
+    float: left;
+    margin-top: 5px;
+    margin-right: 12px;
+}
+
+ul{
+    list-style: none;  
+}
+
+.nav_btns{
+    float: left;
+    display: inline-block;
+    font-size: 75%;
+    color: #000;
+    margin: 13px 5px;
+    text-align: center;
+    padding: 5px 13px;
+    border-color: #f1f1f1;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px #efefef;
+}
+
+.dropdown{
+    text-decoration: none;
+    display: none;
+    font-size: 70%;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    padding: 3px 5px;
+}
+
+.dropdown a{
+    display: block;
+    text-align: left;
+}
+
+.nav_btns:hover,
+.nav_btns:active,
+#submit:hover,
+#submit:active{
+    background-color: #ccc;
+}
+
+.hidbtn{
+    display:none;
+}
+
+.drop_btn1{
+    position: relative;
+}
+
+.drop_btn1:hover + .dropdown,
+.dropdown:hover{
+    display: inline-block;
+}
+
+.dropdown a:hover{
+    background-color: #ffcccc;
+}
+
+.search_section{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0,0,0,0.54)),url("../imgs/farm-img.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+    padding-top: 50px
+}
+
+#search_bar{
+    width: 30%;
+    height: 30px;
+    font-size: 85%;
+    text-indent: 3px;
+}
+
+#selector{
+    font-size: 85%;
+    padding: 3px;
+}
+
+#submit{
+    font-size: 85%;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
